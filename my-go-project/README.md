@@ -1,15 +1,15 @@
-# My Go Project
+# Todo List Go App
 
-This is a simple Go project that demonstrates the structure of a Go application. It includes basic arithmetic operations and serves as an entry point for further development.
+This is a simple command-line Todo List application written in Go. It allows you to add, list, remove, edit, and mark todos as done, as well as clear all completed todos.
 
 ## Project Structure
 
 ```
 my-go-project
 ├── cmd
-│   └── main.go        # Entry point of the application
+│   └── main.go        # Entry point of the application (CLI)
 ├── pkg
-│   └── utils.go       # Utility functions for arithmetic operations
+│   └── utils.go       # Todo list logic and utility functions
 ├── go.mod             # Module definition file
 └── README.md          # Project documentation
 ```
@@ -39,9 +39,31 @@ To build and run the application, follow these steps:
    ./my-go-app
    ```
 
+## Features
+
+- Add a new todo
+- List all todos
+- Remove a todo by ID
+- Mark a todo as done
+- Edit a todo's title
+- Clear all completed todos
+
 ## Usage
 
-This project currently includes utility functions for basic arithmetic operations. You can extend the functionality by adding more features in the `pkg/utils.go` file.
+When you run the app, you'll see a menu:
+
+```
+Todo List App
+1. Add Todo
+2. List Todos
+3. Remove Todo
+4. Mark Todo as Done
+5. Edit Todo
+6. Clear Completed Todos
+7. Exit
+```
+
+Follow the prompts to manage your todo list. Todos are stored in memory for the current session.
 
 ## Contributing
 
